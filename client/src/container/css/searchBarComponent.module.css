@@ -1,0 +1,40 @@
+/**Componente entero**/
+.bar {
+  width: 105%;
+  height: 45px;
+  background: whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  box-shadow: 0.3px 0.3px 1.5px rgb(83, 83, 83);
+}
+
+/**Boton**/
+.boton {
+  width: 15%;
+  cursor: pointer;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: 0.3px 0.3px 1.5px rgb(83, 83, 83);
+  background: white;
+  margin-left: 10px;
+}
+
+.search {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0.3px 0.3px 1.5px rgb(83, 83, 83);
+  border-width: 0.8px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.search:focus {
+  box-shadow: 0.3px 0.3px 2px rgb(0, 0, 0);
+}

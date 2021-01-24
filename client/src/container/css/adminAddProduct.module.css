@@ -1,0 +1,96 @@
+.products {
+  margin-top: 20px;
+  border-bottom: 1px dotted #ccc;
+  cursor: pointer;
+  background: #fffedd;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.actionpane {
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+}
+.buttonNew {
+  background:#d793f7;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+}
+.editar {
+  width: 90%;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffebb4;
+  margin-right: 7px;
+  border-radius: 7px;
+  border-style: none;
+  font-size: 16px;
+  box-shadow: 0.3px 0.3px 1.3px rgb(0, 0, 0);
+  color: rgb(83, 83, 83);
+}
+.borrar {
+  width: 90%;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d793f7;
+  border-radius: 7px;
+  border-style: none;
+  font-size: 17px;
+  box-shadow: 0.3px 0.3px 1.3px rgb(0, 0, 0);
+  color: white;
+}
+.image {
+  width: 80px;
+  max-height: 80px;
+  border-radius: 5px;
+  box-shadow: 0.3px 0.3px 1px black;
+}
+@media(max-width: 770px) {
+  .products {
+    font-size: small;
+  }
+  .buttonNew {
+    height: 25px;
+    font-size: small;
+  }
+}
+@media(max-width: 490px) {
+  .products {
+    font-size: x-small;
+  }
+  .editar {
+    font-size: small;
+  }
+  .borrar {
+    font-size: small;
+  }
+}
+@media(max-width: 450px) {
+  .editar {
+    font-size: x-small;
+    height: 25px;
+  }
+  .borrar {
+    font-size: x-small;
+    height: 25px;
+  }
+}

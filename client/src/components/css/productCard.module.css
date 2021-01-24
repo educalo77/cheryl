@@ -1,0 +1,78 @@
+.card {
+  width: 250px;
+  height: 350px;
+  background:whitesmoke;
+  border-radius: 3px;
+  transition: box-shadow 0.5s;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(37, 37, 37);
+}
+.card:hover {
+  box-shadow: 2px 2px 2px 2px rgb(37, 37, 37);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.image img {
+  width: 250px;
+  height: 220px;
+}
+.productData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+.productData span:first-of-type {
+  padding-top: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Roboto-Medium;
+  color: rgb(17, 17, 17);
+}
+.stockIcon {
+  margin-left: 6px;
+  color: rgb(255, 255, 255);
+  background: rgb(80, 53, 22);
+  padding: 0 0.4px 0 0.4px;
+}
+.stock {
+  display: inline-flex;
+  margin-left: 11.8rem;
+  padding-top: 2rem;
+}
+.price {
+  color: rgb(17, 94, 30);
+  font-size: 16px;
+  border-radius: 2px;
+  font-family: Roboto-Medium;
+}
+.carrito {
+  width: 50px;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 0 185px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 0.2px;
+  border-color: grey;
+  border-radius: 10px;
+}
+.carrito:hover {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+}
+.carrito img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+.carrito button {
+  border: none;
+  outline-style: none;
+  background: white;
+}
