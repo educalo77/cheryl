@@ -12,15 +12,16 @@ import EditProduct from "./container/EditProduct.jsx";
 import EditCategory from "./container/EditCategory.jsx";
 import AdminLogin from "./container/loginCont.jsx";
 import Navbar from "./components/navBar.jsx";
+import Home from "./components/Home"
 
 export default function App() {
   return (
     <BrowserRouter>
       <Route path="/" render={() => <HeaderInicio />} />
-      {/* <Route path="/" render={() => <Navbar />} /> */}
+      <Route path="/" render={() => <Navbar />} />
       <main className="main">
         <div className="content">
-          <Route path="/" exact={true} render={() => <CatalogComponent />} />
+          <Route path="/" exact={true} render={() => <Home />} />
           <Route
             path="/admin"
             exact={true}

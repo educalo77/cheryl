@@ -5,11 +5,11 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className={`topnav ${navbar.navbar}`} id="myTopnav">
-        <a href="/" className={navbar.navbar_a}>
+        <a href="#carousel" className={navbar.navbar_a}>
           Inicio
         </a>
-        <a href="/" className={navbar.navbar_a}>
-          Quienes somos
+        <a href="#catalog" className={navbar.navbar_a}>
+          Catalogo
         </a>
         <a href="/" className={navbar.navbar_a}>
           Preguntas frecuentes
