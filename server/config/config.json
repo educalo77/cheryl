@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Ami16Azu04",
+    "database": "ego",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "zhzmdutrbzaxge",
+    "password": "b8d5047c3ebf20a05384e48b86fc0f7948fe63c139471b29380da0939c87e503",
+    "database": "dc51a24ppcakqm",
+    "host": "ec2-54-211-169-227.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "operatorsAliases": false,
+    "use_env_variable": "DATABASE_URL"
+  }
+}
