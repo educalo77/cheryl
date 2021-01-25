@@ -12,12 +12,7 @@
 .searchbar {
   margin-right: 3%;
 }
-.brand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
-}
 .marca {
   display: flex;
   align-items: center;
@@ -29,9 +24,8 @@
   padding-left: 20px;
 }
 .brand a {
-  font-size: xx-large;
-  padding: 4%;
   font-family: Roboto-Medium;
+
   color: black;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
   text-shadow: 0.3px 0.3px 1px rgb(14, 13, 13);
@@ -39,7 +33,8 @@
 }
 .brand a:last-of-type {
   margin: 0;
-  font-size:  medium;
+  font-size:  xx-large;
+  margin-left: 70%;
 }
 .brandButton {
   font-size: 100%;

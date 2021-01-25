@@ -24,7 +24,6 @@ function HeaderInicio() {
         </div>
           <div className={hInicio.brand}>
           <a href="/">CHERYL</a>
-          <a href="/">Lingerie</a>
         </div>
         <Link
           to={{

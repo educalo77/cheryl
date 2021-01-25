@@ -2,22 +2,40 @@ import React, { useEffect } from 'react';
 import { listProduct } from "../Redux/Products/Actions/productActions";
 import { useSelector, useDispatch } from "react-redux";
 import Carousels from 'react-material-ui-carousel';
-import { Paper } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
 import carousel from './css/carousel.module.css';
 
 function Carousel() {
 
-  const productList = useSelector((state) => state.productList);
-  const { products, loading, error } = productList;
-  const dispatch = useDispatch();
+  // const productList = useSelector((state) => state.productList);
+  // const { products, loading, error } = productList;
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(listProduct());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(listProduct());
+  // }, [dispatch]);
+
+    const products = [
+        {
+            img: "http://imgfz.com/i/o7eX90s.jpeg"
+        },
+                {
+            img: "http://imgfz.com/i/IjXu1sU.jpeg"
+        },
+        {
+            img: "http://imgfz.com/i/w9q2FBi.jpeg"
+        },
+        {
+            img: "http://imgfz.com/i/IMsiw3m.jpeg"
+        },
+        {
+            img: "http://imgfz.com/i/jPA1Ym6.jpeg"
+        },
+        {
+            img: "http://imgfz.com/i/5mqZaeo.jpeg"
+        }
+    ]
     
-    console.log(products)
-    
+   
     return (
         <Carousels className={carousel.container} >
             {
@@ -27,18 +45,5 @@ function Carousel() {
     )
 }
 
-function Item(props)
-{
-    return (
-        <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
-        </Paper>
-    )
-}
 
 export default Carousel

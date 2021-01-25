@@ -8,7 +8,7 @@ class AdminPanel extends React.Component {
   render() {
     return (
       <div className={`${aPanel.centrar}`}>
-        <div className={`container`}>
+        <div className={aPanel.container}>
           <AddCategory />
           <AddProduct />
         </div>

@@ -3,6 +3,7 @@ import sBar from "./css/searchBarComponent.module.css";
 import SearchIcon from "@material-ui/icons/Search";
 import { listProduct } from "../Redux/Products/Actions/productActions";
 import { useDispatch } from "react-redux";
+import SearchBar from "material-ui-search-bar";
 
 export default function SearchBarComponent() {
   const dispatch = useDispatch();
@@ -14,12 +15,20 @@ export default function SearchBarComponent() {
     e.preventDefault();
     setEstado({ ...estado, search: e.target.value });
     dispatch(listProduct(estado.search));
+
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+   window.location = "/?#catalog";
+    return (e) => {
+      e.preventDefault();
+
     dispatch(listProduct());
+
+    }
   };
+
+
 
   return (
     <div>
@@ -38,5 +47,19 @@ export default function SearchBarComponent() {
         </div>
       </form>
     </div>
+  //   <div>
+  // <SearchBar
+  //       value={estado.search}
+  //       placeholder="Buscar producto..."
+  //       type="text"
+  //       onChange={handleInputChange}
+  //       onRequestSearch={event => {
+  //       if (event.key === "Enter") {
+  //           handleSubmit()
+  //       }
+  //       }}
+
+  // />
+  //   </div>
   );
 }
